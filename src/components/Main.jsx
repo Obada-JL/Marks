@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import "./Main.css";
 import { AuthContext } from "../AppContext";
+import { useNavigate } from "react-router-dom";
 
 function MainPage() {
   const { Value } = useContext(AuthContext);
@@ -123,6 +124,17 @@ function MainPage() {
     ));
 
     setcounter(counterElements);
+  }, []);
+  const navigate = useNavigate();
+  useEffect(() => {
+    const unloadCallback = (event) => {
+      event.preventDefault();
+      event.returnValue = "";
+    };
+    window.addEventListener("beforeunload", unloadCallback);
+    return () => {
+      window.removeEventListener("beforeunload", unloadCallback);
+    };
   }, []);
   return (
     <>
