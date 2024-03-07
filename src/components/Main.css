@@ -1,0 +1,45 @@
+.counterSigns {
+  font-size: 25px;
+  border: 1px solid black;
+  display: inline-flex;
+  padding-inline: 10px;
+  padding-block: 5px;
+  font-size: 19px;
+  border-radius: 8px;
+}
+.counterSigns:hover {
+  cursor: pointer;
+  border-color: #646cff;
+}
+.container {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#counter-value {
+  width: 50px;
+  height: 30px;
+  margin: 5px;
+}
+.category {
+  width: 125px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+#increment-btn,
+#decrement-btn {
+  padding-inline: 10px;
+  padding-block: 5px;
+  font-size: 19px;
+  border-radius: 8px;
+}

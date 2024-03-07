@@ -1,0 +1,23 @@
+.input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  direction: rtl;
+}
+.inputContainer {
+  font-size: 20px;
+}
+.selectItem {
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.315);
+}
+.cuzLabel {
+  font-size: 20px;
+}
+.booksForm {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
