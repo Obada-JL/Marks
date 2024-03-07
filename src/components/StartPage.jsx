@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./StartPage.css";
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../AppContext";
