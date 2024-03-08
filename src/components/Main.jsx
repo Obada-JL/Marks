@@ -109,7 +109,7 @@ function MainPage() {
             >
               &#43;
             </button>
-            <input type="number" id="counter-value" min={0} />
+            <input type="number" id="counter-value" min={0} value={0} />
             <button
               id="decrement-btn "
               className={` bg-${counter.bgColor} text-light`}
@@ -134,6 +134,7 @@ function MainPage() {
       window.removeEventListener("beforeunload", unloadCallback);
     };
   }, []);
+
   return (
     <>
       <div>
